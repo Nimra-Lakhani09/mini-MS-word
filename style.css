@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* background */
+body{
+background: linear-gradient(130deg, rgb(201, 133, 144), rgb(246, 137, 155),rgb(247, 166, 180)
+);
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+/* Toolbar */
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  background: rgba(255,255,255,0.15);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #f37590;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Inputs & select */
+input, select {
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Editor area */
+#para {
+  min-height: 250px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+  line-height: 1.5;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+  overflow-x: scroll;
+}
+
+#bg{
+  width: 40px;
+  height: 25px;
+  border: none;
+  background: none;
+  margin-top: 15px;
+}
+
+#paint{
+  margin-bottom: 20px;
+  margin-right: -40px;
+}

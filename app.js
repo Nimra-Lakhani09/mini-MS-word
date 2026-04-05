@@ -35,20 +35,7 @@
 // alert (p5);
 
 
-
-
-let hPlus = document.getElementById('hPlus');
-let hMinus = document.getElementById('hMinus');
-let hItalic = document.getElementById('hItalic');
-let hUnderline = document.getElementById('hUnderline');
-let hClear = document.getElementById('hClear');
-let hColor = document.getElementById('hColor');
-let hFont = document.getElementById('hFont');
-let heading = document.getElementById('heading');
-let hsize = 3;
-
-let plus = document.getElementById('plus');
-let minus = document.getElementById('minus');
+let size = document.getElementById('size');
 let bold = document.getElementById('bold');
 let italic = document.getElementById('italic');
 let underline = document.getElementById('underline');
@@ -56,49 +43,14 @@ let clear = document.getElementById('clear');
 let color = document.getElementById('color');
 let font = document.getElementById('font');
 let bg = document.getElementById('bg');
-let size = 1;
-
-hPlus.addEventListener('click' , ()=>{
-    hsize = hsize + 0.1;
-    heading.style.fontSize = hsize + 'em';
-})
-
-hMinus.addEventListener('click' , ()=>{
-   hsize = hsize - 0.1;
-//    if(hsize < 0.1) + 0.1;
-   heading.style.fontSize = hsize + 'em';
-})
-
-hItalic.addEventListener('click' , ()=>{
-    heading.style.fontStyle = 'italic';
-})
-
-hUnderline.addEventListener('click' , ()=>{
-    heading.style.textDecoration = 'underline';
-})
+let left = document.getElementById('left');
+let center = document.getElementById('center');
+let right = document.getElementById('right');
+let justify = document.getElementById('justify');
 
 
-hClear.addEventListener('click' , ()=>{
-    heading.style = 'none';
-})
-
-hColor.addEventListener('input' , ()=>{
-    heading.style.color = hColor.value;
-})
-hFont.addEventListener('click' , ()=>{
-    heading.style.fontFamily = hFont.value;
-})
-
-
-plus.addEventListener('click' , ()=>{
-    size = size + 0.1;
-    para.style.fontSize = size + 'em';
-})
-
-minus.addEventListener('click' , ()=>{
-    size = size - 0.1;
-    // if(size < 0.1) + 0.1;
-    para.style.fontSize = size + 'em';
+size.addEventListener('click' , ()=>{
+    para.style.fontSize = size.value + 'px';
 })
 
 bold.addEventListener('click' , ()=>{
@@ -128,5 +80,21 @@ font.addEventListener('click' , ()=>{
 })
 
 bg.addEventListener('input' , ()=>{
-    document.body.style.backgroundColor = bg.value;
+    para.style.backgroundColor = bg.value;
+})
+
+left.addEventListener('click' , ()=>{
+    para.style.textAlign = 'left';
+})
+
+center.addEventListener('click' , ()=>{
+    para.style.textAlign = 'center';
+})
+
+right.addEventListener('click' , ()=>{
+    para.style.textAlign = 'right';
+})
+
+justify.addEventListener('click' , ()=>{
+    para.style.textAlign = 'justify';
 })
